@@ -30,8 +30,8 @@ Bare-metal | RTOS | IoT | Automation | R&D Engineering
 
 ## 📊 GitHub Stats
 
-[![GitHub stats-Dark](https://github-stats-extended.vercel.app/api?username=sezgynus&show_icons=true&rank_icon=percentile&include_all_commits=true&theme=dark&bg_color=00000000&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
-[![GitHub stats-Light](https://github-stats-extended.vercel.app/api?username=sezgynus&show_icons=true&rank_icon=percentile&include_all_commits=true&theme=default&bg_color=00000000&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
+[![GitHub stats-Dark](https://github-stats-extended.vercel.app/api?username=sezgynus&show_icons=true&rank_icon=percentile&include_all_commits=true&theme=dark&bg_color=00000000&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub stats-Light](https://github-stats-extended.vercel.app/api?username=sezgynus&show_icons=true&rank_icon=percentile&include_all_commits=true&theme=default&bg_color=00000000&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
 
 [![Top Languages-Dark](https://github-stats-extended.vercel.app/api/top-langs/?username=sezgynus&size_weight=0.5&count_weight=0.5&layout=pie&theme=dark&bg_color=00000000&langs_count=8&hide=g-code)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
 [![Top Languages-Light](https://github-stats-extended.vercel.app/api/top-langs/?username=sezgynus&size_weight=0.5&count_weight=0.5&layout=pie&theme=default&bg_color=00000000&langs_count=8&hide=g-code)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
