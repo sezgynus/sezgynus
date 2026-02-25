@@ -29,9 +29,9 @@ Bare-metal | RTOS | IoT | Automation | R&D Engineering
 ---
 
 ## 📊 GitHub Stats
-![GitHub Stats](https://github-stats-extended.vercel.app/api?username=sezgynus&show_icons=true&theme=dark)
+![GitHub Stats](https://github-stats-extended.vercel.app/api?username=sezgynus&show_icons=true&theme=dark&bg_color=00000000&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
 
-![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=sezgynus&layout=compact&theme=dark&langs_count=8&hide=g-code)
+![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=sezgynus&layout=compact&theme=dark&bg_color=00000000&langs_count=8&hide=g-code)
 
 ---
 
