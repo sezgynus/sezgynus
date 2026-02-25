@@ -1,27 +1,49 @@
 # 👋 Hi, I'm Sezgin AÇIKGÖZ
 
-- 💼 Embedded Systems & Software Developer  
-- ⚙️ Working on IoT, automation and control systems  
-- 🚀 Interested in electronics, firmware and modern software architectures  
-- 🧪 Building practical engineering solutions  
+Embedded Systems & Software Developer  
+Bare-metal | RTOS | IoT | Automation | R&D Engineering  
 
-## 🛠 Technologies & Skills
+---
 
-- Embedded: C, C++, FreeRTOS, RTOS-based architectures  
-- Protocols: Ethernet, EtherCAT, Modbus, UART, SPI, I2C  
-- Platforms: ESP32, ARM Cortex-M series  
-- Software: .NET, C#, Java  
-- Hardware: PCB design, signal-level debugging  
+## 🛠 Technologies
 
-## 📦 Projects & Interests
+![C](https://img.shields.io/badge/-C-blue)
+![C++](https://img.shields.io/badge/-C++-00599C)
+![C#](https://img.shields.io/badge/-C%23-purple)
+![Java](https://img.shields.io/badge/-Java-red)
+![Embedded](https://img.shields.io/badge/-Embedded-000000)
+![ESP32](https://img.shields.io/badge/-ESP32-black)
+![ARM](https://img.shields.io/badge/-ARM-C51A4A)
+![IoT](https://img.shields.io/badge/-IoT-orange)
 
-- 🖨️ 3D printing and mechanical design  
-- 🤖 Industrial automation systems  
-- 🌐 Smart devices and IoT solutions  
-- 🧠 Modular firmware architectures  
+---
+
+## ⚙️ System & Engineering
+
+- Bare-metal firmware development  
+- RTOS-based embedded applications  
+- Industrial communication protocols  
+- Control and automation systems  
+- Hardware debugging & low level optimization  
+
+---
+
+## 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sezgynus&show_icons=true&theme=dark)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sezgynus&layout=compact&theme=dark)
+
+---
+
+## 🔥 Activity
+
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=sezgynus&theme=github-dark)
+
+---
 
 ## 📫 Contact
 
-- LinkedIn: [in/megatrongineer](https://www.linkedin.com/in/megatrongineer/)  
-- Website : [openeye.tech](http://www.openeye.tech/)  
-- Email: [sezginacikgoz@mail.com](mailto:sezginacikgoz@mail.com)
+🌐 Website: https://www.openeye.tech  
+💼 LinkedIn: https://www.linkedin.com/in/megatrongineer/  
+📧 Email: sezginacikgoz@mail.com  
