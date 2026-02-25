@@ -1,16 +1,27 @@
-## Hi there 👋
+# 👋 Hi, I'm Sezgin AÇIKGÖZ
 
-<!--
-**sezgynus/sezgynus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 💼 Embedded Systems & Software Developer  
+- ⚙️ Working on IoT, automation and control systems  
+- 🚀 Interested in electronics, firmware and modern software architectures  
+- 🧪 Building practical engineering solutions  
 
-Here are some ideas to get you started:
+## 🛠 Technologies & Skills
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Embedded: C, C++, FreeRTOS, RTOS-based architectures  
+- Protocols: Ethernet, EtherCAT, Modbus, UART, SPI, I2C  
+- Platforms: ESP32, ARM Cortex-M series  
+- Software: .NET, C#, Java  
+- Hardware: PCB design, signal-level debugging  
+
+## 📦 Projects & Interests
+
+- 🖨️ 3D printing and mechanical design  
+- 🤖 Industrial automation systems  
+- 🌐 Smart devices and IoT solutions  
+- 🧠 Modular firmware architectures  
+
+## 📫 Contact
+
+- LinkedIn: [in/megatrongineer](https://www.linkedin.com/in/megatrongineer/)  
+- Website : [openeye.tech](http://www.openeye.tech/)  
+- Email: [sezginacikgoz@mail.com](mailto:sezginacikgoz@mail.com)
