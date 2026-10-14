@@ -41,6 +41,6 @@ for (const [suffix, theme] of [['dark', 'dark'], ['light', 'default']]) {
     theme,
     bg_color: '00000000',
     langs_count: '8',
-    hide: 'g-code',
+    hide: 'g-code,batchfile',
   });
 }
