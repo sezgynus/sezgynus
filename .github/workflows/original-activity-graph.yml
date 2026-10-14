@@ -74,8 +74,13 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Generate statistics and language charts
         env:
-          PAT_1: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
-        run: node .github/scripts/generate-stats.mjs
+          PAT_1: ${{ secrets.PROFILE_STATS_TOKEN }}
+        run: |
+          if [ -z "$PAT_1" ]; then
+            echo '::error::Missing PROFILE_STATS_TOKEN. Create a GitHub personal access token with public_repo access and add it as an Actions repository secret named PROFILE_STATS_TOKEN.'
+            exit 1
+          fi
+          node .github/scripts/generate-stats.mjs
 
       - name: Upload preview SVGs
         if: github.event_name == 'pull_request'
