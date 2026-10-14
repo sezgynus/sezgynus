@@ -1,0 +1,96 @@
+name: Update original activity graph
+
+on:
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-activity-assets
+  cancel-in-progress: false
+
+jobs:
+  chart:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile
+        uses: actions/checkout@v4
+      - name: Checkout original graph generator
+        uses: actions/checkout@v4
+        with:
+          repository: Ashutosh00710/github-readme-activity-graph
+          path: graph-generator
+          persist-credentials: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install and build original generator
+        working-directory: graph-generator
+        run: |
+          npm ci
+          npm run build
+      - name: Render original dark and light graphs
+        shell: bash
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PORT: '5100'
+        run: |
+          set -euo pipefail
+          (cd graph-generator && npm start) > /tmp/activity-graph-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:5100/ >/dev/null; then break; fi
+            sleep 2
+          done
+          mkdir -p activity-dist
+          curl -fsS --get 'http://127.0.0.1:5100/graph' --data-urlencode 'username=sezgynus' --data-urlencode 'theme=github-dark' --data-urlencode 'bg_color=00000000' -o activity-dist/activity-dark.svg
+          curl -fsS --get 'http://127.0.0.1:5100/graph' --data-urlencode 'username=sezgynus' --data-urlencode 'theme=github-default' --data-urlencode 'bg_color=00000000' -o activity-dist/activity-light.svg
+          python3 - <<'PY'
+          from pathlib import Path
+          for path in Path('activity-dist').glob('*.svg'):
+              data = path.read_text()
+              assert '<svg' in data and '</svg>' in data, path
+              assert 'Something unexpected happened' not in data, path
+              assert "Can't fetch any contribution" not in data, path
+              assert 'API rate limit exceeded' not in data, path
+              assert '<path' in data or '<line' in data, path
+              print(f'Validated {path}')
+          PY
+      - name: Upload preview SVGs
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-activity-graph-preview
+          path: activity-dist/*.svg
+
+      - name: Publish to activity-assets branch
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          parent="$(mktemp -d)"
+          worktree="$parent/working"
+          trap 'git worktree remove -f "$worktree" >/dev/null 2>&1 || true; rm -rf "$parent"' EXIT
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin activity-assets >/dev/null; then
+            git fetch --no-tags origin activity-assets
+            git worktree add --detach "$worktree" FETCH_HEAD
+          else
+            git worktree add --detach "$worktree" HEAD
+            git -C "$worktree" switch --orphan activity-assets
+          fi
+          git -C "$worktree" rm -r --ignore-unmatch . >/dev/null
+          find "$worktree" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp activity-dist/*.svg "$worktree/"
+          git -C "$worktree" add -A
+          if git -C "$worktree" diff --cached --quiet; then exit 0; fi
+          git -C "$worktree" commit -m "chore: refresh original activity graph"
+          git -C "$worktree" push origin HEAD:refs/heads/activity-assets
