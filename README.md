@@ -40,8 +40,8 @@ Bare-metal | RTOS | IoT | Automation | R&D Engineering
 
 ## 🔥 Activity
 
-[![GitHub Activity Graph-Dark](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-dark.svg)](https://github.com/Ashutosh00710/github-readme-activity-graph#gh-dark-mode-only)
-[![GitHub Activity Graph-Light](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-light.svg)](https://github.com/Ashutosh00710/github-readme-activity-graph#gh-light-mode-only)
+[![GitHub Activity Graph-Dark](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-dark.svg?v=original-20261014)](https://github.com/Ashutosh00710/github-readme-activity-graph#gh-dark-mode-only)
+[![GitHub Activity Graph-Light](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-light.svg?v=original-20261014)](https://github.com/Ashutosh00710/github-readme-activity-graph#gh-light-mode-only)
 
 <!-- Original Activity Graph SVGs generated daily by .github/workflows/original-activity-graph.yml -->
 
