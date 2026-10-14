@@ -63,11 +63,25 @@ jobs:
               assert '<path' in data or '<line' in data, path
               print(f'Validated {path}')
           PY
+      - name: Checkout GitHub Readme Stats
+        uses: actions/checkout@v4
+        with:
+          repository: anuraghazra/github-readme-stats
+          path: stats-generator
+          persist-credentials: false
+      - name: Install GitHub Readme Stats dependencies
+        working-directory: stats-generator
+        run: npm ci --ignore-scripts
+      - name: Generate statistics and language charts
+        env:
+          PAT_1: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+        run: node .github/scripts/generate-stats.mjs
+
       - name: Upload preview SVGs
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
         with:
-          name: original-activity-graph-preview
+          name: profile-charts-preview
           path: activity-dist/*.svg
 
       - name: Publish to activity-assets branch
