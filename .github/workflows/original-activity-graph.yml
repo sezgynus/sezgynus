@@ -1,6 +1,8 @@
 name: Update original activity graph
 
 on:
+  pull_request:
+    branches: [master]
   workflow_dispatch:
   schedule:
     - cron: '17 4 * * *'
@@ -61,7 +63,15 @@ jobs:
               assert '<path' in data or '<line' in data, path
               print(f'Validated {path}')
           PY
+      - name: Upload preview SVGs
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-activity-graph-preview
+          path: activity-dist/*.svg
+
       - name: Publish to activity-assets branch
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
