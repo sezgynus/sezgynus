@@ -40,7 +40,7 @@ Bare-metal | RTOS | IoT | Automation | R&D Engineering
 
 ## 🔥 Activity
 
-[![GitHub contribution activity — last 90 days](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-90d.svg)](https://github.com/sezgynus?tab=overview&from=2026-01-01&to=2026-12-31)
+[![GitHub contribution activity — last 90 days](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-90d.svg?v=20261014-0851)](https://github.com/sezgynus?tab=overview&from=2026-01-01&to=2026-12-31)
 
 [30 days](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-30d.svg) · [90 days](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-90d.svg) · [365 days](https://raw.githubusercontent.com/sezgynus/sezgynus/activity-assets/activity-365d.svg)
 
