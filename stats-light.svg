@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Sezgin A&#199;IKG&#214;Z's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 33, Total Commits  : 1437, Total PRs: 50, Total PRs Merged: 44, Merged PRs Percentage: 88.00, Total PRs Reviewed: 3, Total Issues: 1, Total Discussions Started: 0, Total Discussions Answered: 0, Contributed to (last year): 4</desc>
+        <desc id="descId">Total Stars Earned: 33, Total Commits  : 1470, Total PRs: 51, Total PRs Merged: 45, Merged PRs Percentage: 88.24, Total PRs Reviewed: 3, Total Issues: 1, Total Discussions Started: 0, Total Discussions Answered: 0, Contributed to (last year): 4</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 141.24070046111535;
+        stroke-dashoffset: 140.45833126867325;
       }
     }
   
@@ -146,7 +146,7 @@
           Top
         </text>
         <text x="-5" y="12" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="percentile-rank-value" class="rank-percentile-text">
-          56.2%
+          55.9%
         </text>
       
         </g>
@@ -180,7 +180,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >1.4k</text>
+      >1.5k</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -195,7 +195,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >50</text>
+      >51</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -210,7 +210,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs_merged"
-      >44</text>
+      >45</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -225,7 +225,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs_merged_percentage"
-      >88.00 %</text>
+      >88.24 %</text>
     </g>
   </g><g transform="translate(0, 125)">
     <g class="stagger" style="animation-delay: 1200ms" transform="translate(25, 0)">
