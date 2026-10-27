@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Sezgin A&#199;IKG&#214;Z's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 34, Total Commits  : 1660, Total PRs: 60, Total PRs Merged: 54, Merged PRs Percentage: 90.00, Total PRs Reviewed: 3, Total Issues: 1, Total Discussions Started: 0, Total Discussions Answered: 0, Contributed to (last year): 4</desc>
+        <desc id="descId">Total Stars Earned: 34, Total Commits  : 1674, Total PRs: 60, Total PRs Merged: 54, Merged PRs Percentage: 90.00, Total PRs Reviewed: 3, Total Issues: 1, Total Discussions Started: 0, Total Discussions Answered: 0, Contributed to (last year): 4</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 133.20668215125556;
+        stroke-dashoffset: 133.07867718858495;
       }
     }
   
