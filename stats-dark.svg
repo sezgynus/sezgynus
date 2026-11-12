@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Sezgin A&#199;IKG&#214;Z's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 37, Total Commits  : 1734, Total PRs: 63, Total PRs Merged: 57, Merged PRs Percentage: 90.48, Total PRs Reviewed: 3, Total Issues: 1, Total Discussions Started: 0, Total Discussions Answered: 0, Contributed to (last year): 4</desc>
+        <desc id="descId">Total Stars Earned: 38, Total Commits  : 1735, Total PRs: 63, Total PRs Merged: 57, Merged PRs Percentage: 90.48, Total PRs Reviewed: 3, Total Issues: 2, Total Discussions Started: 0, Total Discussions Answered: 0, Contributed to (last year): 5</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 128.71297959892405;
+        stroke-dashoffset: 127.60007663519511;
       }
     }
   
@@ -146,7 +146,7 @@
           Top
         </text>
         <text x="-5" y="12" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="percentile-rank-value" class="rank-percentile-text">
-          51.2%
+          50.8%
         </text>
       
         </g>
@@ -165,7 +165,7 @@
         x="219.01"
         y="12.5"
         data-testid="stars"
-      >37</text>
+      >38</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -255,7 +255,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >1</text>
+      >2</text>
     </g>
   </g><g transform="translate(0, 175)">
     <g class="stagger" style="animation-delay: 1500ms" transform="translate(25, 0)">
@@ -300,7 +300,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >4</text>
+      >5</text>
     </g>
   </g>
     </svg>
